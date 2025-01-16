@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0"name="viewport">
+<title>Car Shopping</title>
+<meta content="" name="Description">
+<meta content="" name="Keywords">
+<link rel="stylesheet"type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+
+<body>
+<section class="header" id="header">
+  <div class="nav-bar">
+    <div class="logo"> <a href="car.html">Car Shopping<span>.</span></a> </div>
+    <div class="menu">
+      <ul>
+        <li><a href="car.html" class="active">Cars<span>.</span></a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="history.html">Technology</a></li>
+        <li><a href="production.html">Production</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li> <a href="view.php">View</a></li>
+      </ul>
+    </div>
+    <div class="social-media">
+      <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=100006958127920"target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/"target="_blank"><i class="fab fa-facebook-messenger"></i></a></li>
+        <li><a href="https://www.instagram.com/m.khalil_ashraf/"target="_blank"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="row">
+      <div class="left-sec">
+        <div class="content">
+          <h2><span>Car Purchase</span><br>
+          </h2>
+          <p>Welcome to our project website, the ultimate destination for all your car needs! Here, we have created a comprehensive platform that brings together an extensive collection of cars for you to explore and access online. Whether you're in search of a sleek sedan, a powerful SUV, or a sporty convertible, we've got you covered. With our user-friendly interface and advanced search features, you can effortlessly browse through a wide range of car models, compare specifications, and make informed decisions. Our website is designed to provide you with a seamless and convenient car shopping experience, enabling you to find your dream vehicle with ease. So, sit back, relax, and let us guide you on your journey to finding the perfect car, right here, at your fingertips.</p>
+        </div>
+        <button class="discover-btn">
+        <a href="caroption.html">discover</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+        </button>
+        <div class="information">
+          <div class="production">
+            <p>Production</p>
+            <h2>2021-present</h2>
+          </div>
+          <div class="production">
+            <p>Group Members</p>
+            <h3> Muhammad Khalil Ashraf, Inshara Ahmed, Rija Javed </h3>
+          </div>
+        </div>
+      </div>
+      <div class="right-sec">
+        <div class="my-car">
+          <div><img src="pngwing.com.png"></div>
+          <div><img src="pngwing.com (5).png"></div>
+          <div><img src="pngwing.com (2).png"></div>
+          <div><img src="pngwing.com (3).png"></div>
+          <div><img src="pngwing.com (4).png"></div>
+          <div><img src="pngwing.com (6).png"></div>
+          <div><img src="pngwing.com (7).png"></div>
+          <div><img src="pngwing.com (8).png"></div>
+          <div><img src="pngwing.com (9).png"></div>
+          <div><img src="pngwing.com (10).png"></div>
+          <div><img src="pngwing.com (11).png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script> 
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".my-car").slick({
+    autoplay: true,
+    dots: true,
+    speed: 500,
+    customPaging: function(slider, i){
+      var thumb = $(slider.$slides[i]).data();
+      return '<a>' + (i+1) + '</a>';
+    }
+  });
+});
+</script>
+</body>
+</html>
